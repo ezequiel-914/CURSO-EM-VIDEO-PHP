@@ -11,14 +11,17 @@
     <div>
         <?php
 
-            $valor = $_GET["v"];
-            $raiz = sqrt($valor);
+            $nome = $_GET["nome"];
+            $ano = $_GET["ano"];
+            $sex = $_GET["sexo"];
+            $idade = date("Y") - $ano;
             
-            echo "O valor enviado foi $valor";
-            echo "<br/>A <i><strong>RAIZ QUADRADA</strong></i> dele é: ". number_format($raiz,2);
-
+            echo "O nome enviado foi $nome";
+            echo "<br/>O ano enviado foi $ano";
+            echo "<br/>O sexo enviado foi $sex";
+            echo "<br/>E vc tem $idade anos!";
         ?>
-    <a href="01exercicio.html">Voltar</a>
+ 
     </div>   
 </body>
 </html>
